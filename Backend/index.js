@@ -11,7 +11,7 @@ const itemRouter = require("./routes/item.routes")
 const orderRouter = require("./routes/order.routes")
 const http = require('http');
 const { Server } = require('socket.io');
-const User = require("./models/user.model.js") // ← added
+const User = require("./models/user.Model.js") // ← added
 
 connectDb()
 const app = express()
