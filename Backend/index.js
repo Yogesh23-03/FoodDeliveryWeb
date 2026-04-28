@@ -18,14 +18,14 @@ const app = express()
 const port = process.env.PORT || 5000
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://fooddeliveryweb-4.onrender.com",
     credentials: true
 }))
 
 const server = http.createServer(app);
 const io = new Server(server, {           // ← io is created here
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://fooddeliveryweb-4.onrender.com",
         credentials: true,
         methods: ["GET", "POST"]
     }
