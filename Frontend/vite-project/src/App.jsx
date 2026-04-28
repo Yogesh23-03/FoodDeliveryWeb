@@ -27,7 +27,7 @@ import useUpdateLocation from './hooks/UseUpdateLocation.jsx'
 
 import { setSocket } from './redux/userSlice'
 
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://fooddeliveryweb-1.onrender.com"
 
 const App = () => {
   const dispatch = useDispatch()
